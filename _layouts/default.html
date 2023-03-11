@@ -22,9 +22,19 @@
       table.GeneratedTable thead {
         background-color: #616161;
       }
-        section { border:1px solid red; padding:10px; overflow:hidden; }
-        section > section { float:left; }
-        .indent-1 { padding-left:120px; }
+        #sides{
+          margin:0;
+        }
+#left{
+float:left;
+width:75%;
+overflow:hidden;
+}
+#right{
+float:left;
+width:25%;
+overflow:hidden;
+} 
      </style>
     
     <meta charset="utf-8">
@@ -55,7 +65,7 @@
         {% endif %}
       </header>
 
-      <section class="indent-1">
+      <section>
         {{ content }}
       </section>
 
